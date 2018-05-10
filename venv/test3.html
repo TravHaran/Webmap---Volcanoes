@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_519ae9d13fcc4441bc894684fb726e3e {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_519ae9d13fcc4441bc894684fb726e3e" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_519ae9d13fcc4441bc894684fb726e3e = L.map(
+                                  'map_519ae9d13fcc4441bc894684fb726e3e',
+                                  {center: [43.886478,-79.010799],
+                                  zoom: 15,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_b44596e5734e4b0ebc455c01eb120936 = L.tileLayer(
+                'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_519ae9d13fcc4441bc894684fb726e3e);
+        
+    
+
+            var marker_a1be1e906fc94da6b051d91d8bb86b03 = L.marker(
+                [43.886478,-79.010799],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_519ae9d13fcc4441bc894684fb726e3e);
+            
+    
+
+                var icon_5ed536f9d5f24f2a904897be5a1419f0 = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a1be1e906fc94da6b051d91d8bb86b03.setIcon(icon_5ed536f9d5f24f2a904897be5a1419f0);
+            
+    
+            var popup_3dcc081360b5469784dcd7369de0f357 = L.popup({maxWidth: '300'});
+
+            
+                var html_1e5fa4e5484b4cf98af2006aedd4e313 = $('<div id="html_1e5fa4e5484b4cf98af2006aedd4e313" style="width: 100.0%; height: 100.0%;">I am so lost</div>')[0];
+                popup_3dcc081360b5469784dcd7369de0f357.setContent(html_1e5fa4e5484b4cf98af2006aedd4e313);
+            
+
+            marker_a1be1e906fc94da6b051d91d8bb86b03.bindPopup(popup_3dcc081360b5469784dcd7369de0f357);
+
+            
+        
+    
+
+            var marker_405f3bf25a9b427bae013285e09b006e = L.marker(
+                [43.993521,-79.124561],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_519ae9d13fcc4441bc894684fb726e3e);
+            
+    
+
+                var icon_9fbd504b3e734b3186e3f9310dc51643 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_405f3bf25a9b427bae013285e09b006e.setIcon(icon_9fbd504b3e734b3186e3f9310dc51643);
+            
+    
+            var popup_b33b642627ba458faa0747c5340dacbb = L.popup({maxWidth: '300'});
+
+            
+                var html_a983c570ebea4b6c83b7e1363e1e968c = $('<div id="html_a983c570ebea4b6c83b7e1363e1e968c" style="width: 100.0%; height: 100.0%;">But I can see you</div>')[0];
+                popup_b33b642627ba458faa0747c5340dacbb.setContent(html_a983c570ebea4b6c83b7e1363e1e968c);
+            
+
+            marker_405f3bf25a9b427bae013285e09b006e.bindPopup(popup_b33b642627ba458faa0747c5340dacbb);
+
+            
+        
+</script>
